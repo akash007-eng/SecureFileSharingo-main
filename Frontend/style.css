@@ -141,3 +141,56 @@ footer span {
   color: #ffffff;
   opacity: 0.7;
 }
+
+.download input{
+
+width:100%;
+
+padding:10px;
+
+margin-top:10px;
+
+border-radius:6px;
+
+border:1px solid #ccc;
+
+}
+
+
+.download button{
+
+margin-top:15px;
+
+background:#4CAF50;
+
+color:white;
+
+padding:10px;
+
+border:none;
+
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+
+.download button:hover{
+
+background:#43a047;
+
+}
+
+
+.hash{
+
+margin-top:10px;
+
+font-size:14px;
+
+color:#aaa;
+
+word-break:break-all;
+
+}

@@ -1,11 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Secure File Sharing</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <script>
@@ -23,12 +27,17 @@ window.location.href="login.html"
 
 </head>
 
+
 <body>
 
+
 <nav class="navbar">
+
 <div class="nav-content">
+
 <h1>🔐 Secure File Sharing</h1>
 <p>Blockchain-Powered Secure File Exchange</p>
+
 </div>
 
 <div style="position:absolute;right:30px;top:20px;">
@@ -37,33 +46,96 @@ window.location.href="login.html"
 
 </nav>
 
+
+
 <main class="container">
 
+
+<!-- Upload Section -->
+
 <section class="card upload">
+
 <h2>📤 Upload File</h2>
-<p class="subtitle">Encrypt and securely store your file on blockchain</p>
+
+<p class="subtitle">
+Encrypt and securely store your file on blockchain
+</p>
+
 <input type="file" id="uploadFile">
+
 <button onclick="uploadFile()">Encrypt & Store</button>
+
 <p id="uploadStatus" class="status"></p>
+
+<p id="hashDisplay" class="hash"></p>
+
 </section>
 
+
+
+<!-- Verify Section -->
+
 <section class="card verify">
+
 <h2>✅ Verify File</h2>
-<p class="subtitle">Check integrity and authenticity of your file</p>
+
+<p class="subtitle">
+Check integrity and authenticity of your file
+</p>
+
 <input type="file" id="verifyFile">
+
 <button onclick="verifyFile()">Verify Integrity</button>
+
 <p id="verifyStatus" class="status"></p>
+
 </section>
+
+
+
+<!-- Download Section -->
+
+<section class="card download">
+
+<h2>📥 Download File</h2>
+
+<p class="subtitle">
+Retrieve and decrypt your stored file
+</p>
+
+<input
+type="text"
+id="fileHash"
+placeholder="Enter File Hash"
+>
+
+<button onclick="downloadFile()">
+Download & Decrypt
+</button>
+
+<p id="downloadStatus" class="status"></p>
+
+</section>
+
 
 </main>
 
+
+
 <footer>
+
 <p>© 2026 <strong>Akash Koka</strong>. All Rights Reserved.</p>
-<span>Secure File Sharing using Blockchain Technology</span>
+
+<span>
+Secure File Sharing using Blockchain Technology
+</span>
+
 </footer>
+
 
 <script src="script.js"></script>
 
-</body>
-</html>
 
+</body>
+
+</html>
