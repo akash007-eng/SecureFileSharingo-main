@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Secure File Sharing</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script>
+
+if(!localStorage.getItem("loggedIn")){
+window.location.href="login.html"
+}
+
+function logout(){
+localStorage.removeItem("loggedIn")
+window.location.href="login.html"
+}
+
+</script>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="nav-content">
+<h1>🔐 Secure File Sharing</h1>
+<p>Blockchain-Powered Secure File Exchange</p>
+</div>
+
+<div style="position:absolute;right:30px;top:20px;">
+<button onclick="logout()">Logout</button>
+</div>
+
+</nav>
+
+<main class="container">
+
+<section class="card upload">
+<h2>📤 Upload File</h2>
+<p class="subtitle">Encrypt and securely store your file on blockchain</p>
+<input type="file" id="uploadFile">
+<button onclick="uploadFile()">Encrypt & Store</button>
+<p id="uploadStatus" class="status"></p>
+</section>
+
+<section class="card verify">
+<h2>✅ Verify File</h2>
+<p class="subtitle">Check integrity and authenticity of your file</p>
+<input type="file" id="verifyFile">
+<button onclick="verifyFile()">Verify Integrity</button>
+<p id="verifyStatus" class="status"></p>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 <strong>Akash Koka</strong>. All Rights Reserved.</p>
+<span>Secure File Sharing using Blockchain Technology</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
